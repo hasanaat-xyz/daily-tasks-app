@@ -15,7 +15,6 @@ router.get("/:userName/:date", async (req, res) => {
 // CREATE task
 router.post("/", async (req, res) => {
   try {
-    
     const { userName, title, date } = req.body;
     const task = new Task({
       userName,
