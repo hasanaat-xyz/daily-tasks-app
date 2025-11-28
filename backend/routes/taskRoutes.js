@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
 // TOGGLE complete
 router.patch("/:id", async (req, res) => {
   try {
-    
+
     const task = await Task.findById(req.params.id);
 
     if (!task) return res.status(404).json({ message: "Task not found" });
@@ -39,7 +39,6 @@ router.patch("/:id", async (req, res) => {
     task.completed = !task.completed;
     task.missed = false;
     await task.save();
-
     res.json(task);
   } catch (error) {
     res.status(500).json({ message: error.message });
