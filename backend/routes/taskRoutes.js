@@ -22,9 +22,6 @@ router.post("/", async (req, res) => {
       date
     });
 
-
-    
-
     await task.save();
     res.status(201).json(task);
   } catch (error) {
