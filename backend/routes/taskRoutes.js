@@ -33,9 +33,7 @@ router.patch("/:id", async (req, res) => {
   try {
 
     const task = await Task.findById(req.params.id);
-
     if (!task) return res.status(404).json({ message: "Task not found" });
-
     task.completed = !task.completed;
     task.missed = false;
     await task.save();
