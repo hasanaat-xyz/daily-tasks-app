@@ -22,7 +22,6 @@ export default function TaskCard({ task, refresh }) {
         {task.missed && (
           <p className="text-red-500 text-sm">Missed</p>
         )}
-
       </div>
       <button
         onClick={toggleTask}
