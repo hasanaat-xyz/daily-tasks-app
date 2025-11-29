@@ -37,5 +37,4 @@ export default function TaskCard({ task, refresh }) {
       </button>
     </div>
   );
-  
 }
