@@ -33,7 +33,6 @@ export default function TaskCard({ task, refresh }) {
           : "bg-green-500"
         }`}
       >
-        
         {task.completed ? "Undo" : "Done"}
       </button>
     </div>
