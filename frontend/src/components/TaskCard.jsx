@@ -19,6 +19,7 @@ export default function TaskCard({ task, refresh }) {
         >
           {task.title}
         </h2>
+        
         {task.missed && (
           <p className="text-red-500 text-sm">Missed</p>
         )}
