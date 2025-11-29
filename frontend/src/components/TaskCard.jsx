@@ -36,6 +36,5 @@ export default function TaskCard({ task, refresh }) {
         {task.completed ? "Undo" : "Done"}
       </button>
     </div>
-    
   );
 }
