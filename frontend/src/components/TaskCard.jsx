@@ -17,7 +17,6 @@ export default function TaskCard({ task, refresh }) {
             task.completed ? "line-through text-gray-400" : ""
           }`}
         >
-          
           {task.title}
         </h2>
         {task.missed && (
