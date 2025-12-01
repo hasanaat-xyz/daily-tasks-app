@@ -8,7 +8,6 @@ router.get("/:userName/:date", async (req, res) => {
   try {    const { userName, date } = req.params;
     const tasks = await Task.find({ userName, date });
     res.json(tasks);
-
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
