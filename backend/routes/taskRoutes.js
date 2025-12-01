@@ -12,7 +12,6 @@ router.get("/:userName/:date", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
 // CREATE task
 router.post("/", async (req, res) => {
   try {
