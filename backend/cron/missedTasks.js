@@ -12,7 +12,6 @@ setInterval(async () => {
         status: "pending"
       },
       {
-        
         status: "missed"
       }
     );
