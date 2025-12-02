@@ -14,7 +14,6 @@ setInterval(async () => {
         status: "missed"
       }
     );
-
     console.log("✅ Pending tasks marked as missed");
 
   } catch (error) {
