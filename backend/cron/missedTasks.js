@@ -3,6 +3,7 @@ import Task from "../models/Task.js";
 // Every day at midnight
 setInterval(async () => {
   try {
+    
     const today = new Date().toISOString().slice(0, 10);
 
     await Task.updateMany(
