@@ -29,6 +29,7 @@ export const createTask = async (req, res) => {
 };
 
 // get all ttasks by users
+
 export const getAllTasksByUser = async (req, res) => {
   try {
     const { userId } = req.params;
