@@ -11,24 +11,22 @@ export const createTask = async (req, res) => {
       title,
       userId,
       date,
-      status: "pending"
+      status: "pending",
     });
 
     await newTask.save();
 
     res.status(201).json({
       message: "✅ Task created",
-      task: newTask
+      task: newTask,
     });
-
   } catch (error) {
     res.status(500).json({
       message: "❌ Error creating task",
-      error: error.message
+      error: error.message,
     });
   }
 };
-
 
 /* ===================================
    ✅ GET ALL TASKS BY USER
@@ -40,15 +38,13 @@ export const getAllTasksByUser = async (req, res) => {
     const tasks = await Task.find({ userId }).sort({ createdAt: -1 });
 
     res.json(tasks);
-
   } catch (error) {
     res.status(500).json({
       message: "❌ Error fetching tasks",
-      error: error.message
+      error: error.message,
     });
   }
 };
-
 
 /* ===================================
    ✅ UPDATE TASK STATUS
@@ -66,17 +62,15 @@ export const updateTaskStatus = async (req, res) => {
 
     res.json({
       message: "✅ Task updated",
-      task: updatedTask
+      task: updatedTask,
     });
-
   } catch (error) {
     res.status(500).json({
       message: "❌ Error updating task",
-      error: error.message
+      error: error.message,
     });
   }
 };
-
 
 // DELETE TASK
 export const deleteTask = async (req, res) => {
@@ -87,7 +81,7 @@ export const deleteTask = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       message: "❌ Error deleting task",
-      error: error.message
+      error: error.message,
     });
   }
 };
