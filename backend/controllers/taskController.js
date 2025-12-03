@@ -81,7 +81,6 @@ export const updateTaskStatus = async (req, res) => {
 // DELETE TASK
 export const deleteTask = async (req, res) => {
   try {
-    
     const { id } = req.params;
     await Task.findByIdAndDelete(id);
     res.json({ message: "✅ Task deleted" });
