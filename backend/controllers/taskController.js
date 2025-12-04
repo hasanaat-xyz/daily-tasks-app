@@ -44,9 +44,7 @@ export const getAllTasksByUser = async (req, res) => {
   }
 };
 
-/* ===================================
-   ✅ UPDATE TASK STATUS
-=================================== */
+
 export const updateTaskStatus = async (req, res) => {
   try {
     const { id } = req.params;
