@@ -55,7 +55,6 @@ export const updateTaskStatus = async (req, res) => {
 
       { new: true }
     );
-    
     res.json({
       message: "✅ Task updated",
       task: updatedTask,
