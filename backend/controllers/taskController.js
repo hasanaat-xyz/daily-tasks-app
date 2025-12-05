@@ -65,8 +65,6 @@ export const updateTaskStatus = async (req, res) => {
       error: error.message,
     });
   }
-
-  
 };
 
 // DELETE TASK
