@@ -52,7 +52,6 @@ export const updateTaskStatus = async (req, res) => {
     const updatedTask = await Task.findByIdAndUpdate(
       id,
       { status },
-
       { new: true }
     );
     res.json({
