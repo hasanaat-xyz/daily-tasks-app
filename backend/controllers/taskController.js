@@ -10,7 +10,6 @@ export const createTask = async (req, res) => {
       date,
       status: "pending",
     });
-
     await newTask.save();
 
     res.status(201).json({
