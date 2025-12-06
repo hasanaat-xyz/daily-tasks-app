@@ -31,6 +31,7 @@ export const getAllTasksByUser = async (req, res) => {
     const { userId } = req.params;
     const tasks = await Task.find({ userId }).sort({ createdAt: -1 });
     res.json(tasks);
+    
   } catch (error) {
     res.status(500).json({
       message: "❌ Error fetching tasks",
