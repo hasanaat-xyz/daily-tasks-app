@@ -36,6 +36,7 @@ export const getAllTasksByUser = async (req, res) => {
       message: "❌ Error fetching tasks",
       error: error.message,
     });
+    
   }
 };
 
