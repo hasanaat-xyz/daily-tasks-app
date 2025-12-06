@@ -35,8 +35,7 @@ export const getAllTasksByUser = async (req, res) => {
     res.status(500).json({
       message: "❌ Error fetching tasks",
       error: error.message,
-    });
-    
+    }); 
   }
 };
 
