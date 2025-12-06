@@ -15,7 +15,7 @@ export const createTask = async (req, res) => {
       message: "✅ Task created",
       task: newTask,
     });
-    
+
   } catch (error) {
     res.status(500).json({
       message: "❌ Error creating task",
@@ -24,7 +24,7 @@ export const createTask = async (req, res) => {
   }
 };
 
-// get all ttasks by users
+// get all tasks by users
 
 export const getAllTasksByUser = async (req, res) => {
   try {
