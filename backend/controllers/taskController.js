@@ -11,7 +11,6 @@ export const createTask = async (req, res) => {
       status: "pending",
     });
     await newTask.save();
-
     res.status(201).json({
       message: "✅ Task created",
       task: newTask,
