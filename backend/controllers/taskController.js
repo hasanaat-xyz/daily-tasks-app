@@ -28,7 +28,6 @@ export const createTask = async (req, res) => {
 
 export const getAllTasksByUser = async (req, res) => {
   try {
-    
     const { userId } = req.params;
     const tasks = await Task.find({ userId }).sort({ createdAt: -1 });
     res.json(tasks);
