@@ -67,6 +67,7 @@ export const updateTaskStatus = async (req, res) => {
   }
 };
 
+
 // DELETE TASK
 export const deleteTask = async (req, res) => {
   try {
