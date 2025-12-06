@@ -59,7 +59,6 @@ export const updateTaskStatus = async (req, res) => {
       message: "✅ Task updated",
       task: updatedTask,
     });
-    
   } catch (error) {
     res.status(500).json({
       message: "❌ Error updating task",
