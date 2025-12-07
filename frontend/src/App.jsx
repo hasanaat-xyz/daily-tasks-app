@@ -12,7 +12,6 @@ export default function App() {
           {/* Main Dashboard */}
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-        
       </div>
     </Router>
   );
