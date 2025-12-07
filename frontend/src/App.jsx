@@ -10,6 +10,7 @@ export default function App() {
           {/* Login Page */}
           <Route path="/" element={<Login />} />
           {/* Main Dashboard */}
+          
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
