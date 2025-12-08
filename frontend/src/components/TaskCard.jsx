@@ -9,8 +9,6 @@ export default function TaskCard({ task, refresh }) {
       console.log(err);
     }
   };
-
-  
   return (
     <div className="p-4 mb-3 border rounded-lg flex justify-between items-center">
       <div>
