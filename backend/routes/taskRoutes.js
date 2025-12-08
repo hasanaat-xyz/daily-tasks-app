@@ -27,7 +27,6 @@ router.post("/", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
 // TOGGLE complete
 
 router.patch("/:id", async (req, res) => {
