@@ -13,7 +13,6 @@ export default function TaskList({ tasks, refresh }) {
           task={task}
           refresh={refresh}
         />
-
       ))}
     </div>
   );
