@@ -55,6 +55,7 @@ export default function Dashboard() {
       <p className="text-center text-gray-600 mb-10 text-lg md:text-xl">
         Date: <span className="font-semibold text-purple-600">{today}</span>
       </p>
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {PEOPLE.map((person) => (
           <div
