@@ -30,6 +30,7 @@ export default function Dashboard() {
       return [];
     }
   }, [today]);
+  
   // Fetch tasks for ALL users
   const loadAllTasks = useCallback(async () => {
     const [hasanaat, humera, hafsah] = await Promise.all([
