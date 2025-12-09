@@ -15,6 +15,5 @@ export default function TaskList({ tasks, refresh }) {
         />
       ))}
     </div>
-    
   );
 }
