@@ -48,7 +48,6 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-indigo-50 via-purple-50 to-pink-50 p-8">
-      
       <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-2 text-purple-700 animate-pulse">
         📋 Daily Task Dashboard
       </h1>
