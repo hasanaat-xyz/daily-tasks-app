@@ -6,6 +6,7 @@ export default function TaskList({ tasks, refresh }) {
     return <p className="text-center text-gray-500">No tasks today ✨</p>;
   }
   return (
+
     <div className="space-y-4">
       {tasks.map(task => (
         <TaskCard
@@ -14,7 +15,6 @@ export default function TaskList({ tasks, refresh }) {
           refresh={refresh}
         />
       ))} 
-
     </div>
   );
 }
