@@ -14,7 +14,6 @@ router.get("/:userName/:date", async (req, res) => {
 });
 
 // CREATE task
-
 router.post("/", async (req, res) => {
   try {
     const { userName, title, date } = req.body;
@@ -43,4 +42,5 @@ router.patch("/:id", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
 export default router;
