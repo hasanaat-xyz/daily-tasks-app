@@ -17,6 +17,7 @@ export const generateTasksForToday = async () => {
     const templates = await UserTask.find({ userName });
 
     // Create tasks for today
+    
     const tasksForToday = templates.map(t => ({
       userName: t.userName,
       title: t.title,
