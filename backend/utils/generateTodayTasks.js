@@ -6,7 +6,6 @@ export const generateTasksForToday = async () => {
   const today = new Date().toISOString().slice(0,10);
 
   // For each user
-  
   const users = ["hasanaat", "humera", "hafsah"];
 
   for (let userName of users) {
