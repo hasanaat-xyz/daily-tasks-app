@@ -6,6 +6,7 @@ export const generateTasksForToday = async () => {
   const today = new Date().toISOString().slice(0,10);
 
   // For each user
+  
   const users = ["hasanaat", "humera", "hafsah"];
 
   for (let userName of users) {
@@ -15,7 +16,7 @@ export const generateTasksForToday = async () => {
 
     // Fetch template tasks for the user
     const templates = await UserTask.find({ userName });
-    
+
     // Create tasks for today
     const tasksForToday = templates.map(t => ({
       userName: t.userName,
