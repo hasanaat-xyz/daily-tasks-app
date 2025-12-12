@@ -4,7 +4,6 @@ import UserTask from "../models/UserTask.js";
 
 export const generateTasksForToday = async () => {
   const today = new Date().toISOString().slice(0,10);
-
   // For each user
   const users = ["hasanaat", "humera", "hafsah"];
 
@@ -23,7 +22,7 @@ export const generateTasksForToday = async () => {
       title: t.title,
       date: today
     }));
-    
+
     await Task.insertMany(tasksForToday);
   }
 };
