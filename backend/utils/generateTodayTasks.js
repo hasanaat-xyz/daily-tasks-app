@@ -19,7 +19,6 @@ export const generateTasksForToday = async () => {
     // Create tasks for today
 
     const tasksForToday = templates.map(t => ({
-      
       userName: t.userName,
       title: t.title,
       date: today
