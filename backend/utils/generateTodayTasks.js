@@ -22,7 +22,6 @@ export const generateTasksForToday = async () => {
       title: t.title,
       date: today
     }));
-
     await Task.insertMany(tasksForToday);
   }
 };
