@@ -14,6 +14,7 @@ export const generateTasksForToday = async () => {
     if (existing.length > 0) continue; // skip if already created
 
     // Fetch template tasks for the user
+    
     const templates = await UserTask.find({ userName });
 
     // Create tasks for today
