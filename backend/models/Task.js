@@ -27,7 +27,7 @@ const taskSchema = new mongoose.Schema(
       default: false,
     },
   },
-  
+
   { timestamps: true }
 );
 
