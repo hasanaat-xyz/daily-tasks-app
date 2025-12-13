@@ -12,7 +12,7 @@ const taskSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    
+
     date: {
       type: String, // "YYYY-MM-DD"
       required: true,
@@ -27,6 +27,7 @@ const taskSchema = new mongoose.Schema(
       default: false,
     },
   },
+  
   { timestamps: true }
 );
 
