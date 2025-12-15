@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const taskSchema = new mongoose.Schema(
-  
   {
     userName: {
       type: String,
@@ -13,6 +12,7 @@ const taskSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+
     date: {
       type: String, // "YYYY-MM-DD"
       required: true,
