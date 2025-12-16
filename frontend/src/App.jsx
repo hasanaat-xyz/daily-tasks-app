@@ -5,6 +5,7 @@ import Login from "./pages/LoginPage";
 export default function App() {
   
   return ( 
+    
     <Router>
       <div className="min-h-screen bg-[#f6f7fb] text-gray-800">
         <Routes>
