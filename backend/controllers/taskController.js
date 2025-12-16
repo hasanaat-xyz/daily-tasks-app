@@ -41,7 +41,6 @@ export const getAllTasksByUser = async (req, res) => {
 
 export const updateTaskStatus = async (req, res) => {
   try {
-    
     const { id } = req.params;
     const { status } = req.body;
     const updatedTask = await Task.findByIdAndUpdate(
