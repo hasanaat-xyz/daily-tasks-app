@@ -26,7 +26,7 @@ const taskSchema = new mongoose.Schema(
       default: false,
     },
   },
-  
+  \
   { timestamps: true }
 );
 export default mongoose.model("Task", taskSchema);
