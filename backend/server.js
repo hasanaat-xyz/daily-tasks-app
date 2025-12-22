@@ -4,6 +4,7 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(async () => {
     console.log("✅ MongoDB connected");
+    
     // generate today's tasks
     await generateTasksForToday();
     console.log("✅ Today's tasks generated");
