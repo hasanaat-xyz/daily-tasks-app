@@ -7,7 +7,6 @@ mongoose
     // generate today's tasks
 
     await generateTasksForToday();
-    
     console.log("✅ Today's tasks generated");
     app.listen(PORT, () => {
       console.log(`🚀 Server running on http://localhost:${PORT}`);
