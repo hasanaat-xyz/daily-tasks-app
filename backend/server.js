@@ -10,5 +10,4 @@ mongoose
     app.listen(PORT, () => {
       console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
-  })
-.catch((err) => console.error("❌ MongoDB error:", err.message));
+  }) .catch((err) => console.error("❌ MongoDB error:", err.message));
