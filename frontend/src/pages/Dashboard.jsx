@@ -16,7 +16,7 @@ export default function Dashboard() {
     humera: [],
     hafsah: []
   });
-  
+
   // Fetch tasks for ONE user
   const getTasksForUser = useCallback(async (userName) => {
     try {
@@ -31,7 +31,6 @@ export default function Dashboard() {
   }, [today]);
 
   // Fetch tasks for ALL users
-
   const loadAllTasks = useCallback(async () => {
     const [hasanaat, humera, hafsah] = await Promise.all([
       getTasksForUser("hasanaat"),
