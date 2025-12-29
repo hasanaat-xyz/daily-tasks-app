@@ -59,6 +59,7 @@ export default function Dashboard() {
             key={person.id}
             className="bg-white p-6 rounded-2xl shadow-xl border border-purple-100 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
           >
+          
             <h2 className="text-2xl font-bold text-center mb-5 text-purple-600 underline decoration-pink-400">
               {person.name}
             </h2>
