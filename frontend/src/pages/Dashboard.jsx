@@ -74,7 +74,6 @@ export default function Dashboard() {
                     key={task._id}
                     task={task}
                     refresh={loadAllTasks}
-                    
                   />
                 ))}
               </div>
