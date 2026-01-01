@@ -15,7 +15,6 @@ export default function Login() {
     <div className="flex items-center justify-center h-screen">
       <div className="bg-white p-6 rounded-xl shadow-md w-80">
         <h1 className="text-xl font-bold mb-4 text-center">Login</h1>
-
         <input
           className="border p-2 w-full mb-3 rounded"
           placeholder="Enter your name"
@@ -26,8 +25,7 @@ export default function Login() {
         <button
           onClick={handleLogin}
           className="bg-blue-600 text-white w-full py-2 rounded"
-        >
-          
+        >  
           Enter
         </button>
       </div>
