@@ -27,6 +27,7 @@ export default function Dashboard() {
       console.error("Error fetching tasks for", userName, error);
       return [];
     }
+    
   }, [today]);
 
   // Fetch tasks for ALL users
