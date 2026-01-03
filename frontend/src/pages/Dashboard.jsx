@@ -66,8 +66,9 @@ export default function Dashboard() {
               <p className="text-center text-gray-400 italic">
                 No tasks for today
               </p>
-              
+
             ) : (
+              
               <div className="space-y-4">
                 {allTasks[person.id].map((task) => (
                   <TaskCard
