@@ -49,7 +49,6 @@ export default function Dashboard() {
       <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-2 text-purple-700 animate-pulse">
         📋 Daily Task Dashboard
       </h1>
-      
       <p className="text-center text-gray-600 mb-10 text-lg md:text-xl">
         Date: <span className="font-semibold text-purple-600">{today}</span>
       </p>
