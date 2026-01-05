@@ -55,7 +55,6 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {PEOPLE.map((person) => (
           <div
-
             key={person.id}
             className="bg-white p-6 rounded-2xl shadow-xl border border-purple-100 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
           >
