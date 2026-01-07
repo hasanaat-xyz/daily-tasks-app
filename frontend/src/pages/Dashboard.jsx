@@ -73,9 +73,7 @@ export default function Dashboard() {
                     task={task}
                     refresh={loadAllTasks}
                   />
-                ))
-                }
-                
+                ))}
               </div> 
             )}
           </div>
