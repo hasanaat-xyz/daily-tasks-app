@@ -60,6 +60,7 @@ export default function Dashboard() {
           >
             <h2 className="text-2xl font-bold text-center mb-5 text-purple-600 underline decoration-pink-400">
               {person.name}
+              
             </h2>
             {allTasks[person.id].length === 0 ? (
               <p className="text-center text-gray-400 italic">
