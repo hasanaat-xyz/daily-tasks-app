@@ -64,8 +64,7 @@ export default function Dashboard() {
             {allTasks[person.id].length === 0 ? (
               <p className="text-center text-gray-400 italic">
                 No tasks for today
-              </p>
-              
+              </p> 
             ) : (
               <div className="space-y-4">
                 {allTasks[person.id].map((task) => (
