@@ -37,6 +37,7 @@ export default function Dashboard() {
       getTasksForUser("humera"),
       getTasksForUser("hafsah")
     ]);
+    
     setAllTasks({ hasanaat, humera, hafsah });
   }, [getTasksForUser]);
   useEffect(() => {
