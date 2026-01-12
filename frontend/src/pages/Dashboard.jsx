@@ -71,6 +71,7 @@ export default function Dashboard() {
                 {allTasks[person.id].map((task) => (
                   <TaskCard                 
                     key={task._id}
+                    
                     task={task}
                     refresh={loadAllTasks}
                   />
