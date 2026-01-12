@@ -69,8 +69,7 @@ export default function Dashboard() {
             ) : (
               <div className="space-y-4">
                 {allTasks[person.id].map((task) => (
-                  <TaskCard
-                  
+                  <TaskCard                 
                     key={task._id}
                     task={task}
                     refresh={loadAllTasks}
