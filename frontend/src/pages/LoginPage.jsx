@@ -25,7 +25,6 @@ export default function Login() {
           className="bg-blue-600 text-white w-full py-2 rounded"
         >  
           Enter
-          
         </button>
       </div>
     </div>
