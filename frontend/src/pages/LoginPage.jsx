@@ -27,7 +27,6 @@ export default function Login() {
           Enter
         </button>
       </div>
-    </div>
-    
+    </div> 
 );
 }
