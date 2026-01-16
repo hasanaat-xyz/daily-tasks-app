@@ -23,8 +23,7 @@ export default function Login() {
         <button
           onClick={handleLogin}
           className="bg-blue-600 text-white w-full py-2 rounded"
-        >  
-        
+        > 
           Enter
         </button>
       </div>
