@@ -10,7 +10,6 @@ export default function Login() {
     localStorage.setItem("username", name);
     navigate("/dashboard");
   };
-  
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="bg-white p-6 rounded-xl shadow-md w-80">
