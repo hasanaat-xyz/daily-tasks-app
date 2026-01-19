@@ -20,6 +20,7 @@ export default function Login() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        
         <button
           onClick={handleLogin}
           className="bg-blue-600 text-white w-full py-2 rounded"
