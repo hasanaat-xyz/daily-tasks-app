@@ -39,8 +39,7 @@ router.patch("/:id", async (req, res) => {
     await task.save();
     res.json(task);
   } catch (error) {
-    res.
-    status(500).json({ message: error.message });
+    res.status(500).json({ message: error.message });
   }
 });
 export default router;
