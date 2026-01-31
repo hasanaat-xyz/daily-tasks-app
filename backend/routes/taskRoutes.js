@@ -37,7 +37,6 @@ router.patch("/:id", async (req, res) => {
     task.completed = !task.completed;
     task.missed = false;
     await task.save();
-    
     res.json(task);
   } catch (error) {
     res.status(500).json({ message: error.message });
