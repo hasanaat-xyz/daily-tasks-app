@@ -21,6 +21,7 @@ const taskSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    
     missed: {
       type: Boolean,
       default: false,
