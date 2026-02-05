@@ -24,8 +24,7 @@ const taskSchema = new mongoose.Schema(
     missed: {
       type: Boolean,
       default: false,
-    },
-    
+    }, 
   },
   { timestamps: true }
 );
