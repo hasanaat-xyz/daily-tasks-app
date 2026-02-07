@@ -1,18 +1,15 @@
 import mongoose from "mongoose";
 const taskSchema = new mongoose.Schema(
   {
-    
     userName: {
       type: String,
       required: true,
       enum: ["hasanaat", "humera", "hafsah"],
     },
-
     title: {
       type: String,
       required: true,
     },
-
     date: {
       type: String, // "YYYY-MM-DD"
       required: true,
