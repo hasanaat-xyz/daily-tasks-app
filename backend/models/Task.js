@@ -7,7 +7,6 @@ const taskSchema = new mongoose.Schema(
       enum: ["hasanaat", "humera", "hafsah"],
     },
     title: {
-      
       type: String,
       required: true,
     },
