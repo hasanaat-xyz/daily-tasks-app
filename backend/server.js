@@ -1,5 +1,4 @@
 import { generateTasksForToday } from "./utils/generateTodayTasks.js";
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(async () => {
