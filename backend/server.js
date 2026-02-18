@@ -5,7 +5,6 @@ mongoose
   .then(async () => {
     console.log("✅ MongoDB connected");
     // generate today's tasks
-
     await generateTasksForToday();
     console.log("✅ Today's tasks generated");
     app.listen(PORT, () => {
